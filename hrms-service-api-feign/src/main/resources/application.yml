@@ -1,0 +1,37 @@
+server:
+   port: 9095
+   
+logging:
+   file:
+      name: hrms-service-api-feign
+
+spring:
+   application:
+      name: hrms-service-api-feign
+   boot:
+      admin:
+         client:
+            enabled: true
+            autoRegistration: true
+            url: http://localhost:6060/
+            
+ 
+management:
+   server:
+      port: 5054
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+      
+      
+#Eureka client related settings 
+
+eureka:
+   client:
+      registerWithEureka: true
+      fetchRegistry: true
+      service-url:
+         defaultZone: http://localhost:8761/eureka/
+   instance:
+      hostname: localhost

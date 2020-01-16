@@ -1,0 +1,10 @@
+server:
+   port: 6060
+
+spring:
+   application:
+      name: spring-api-monitoring-portal
+      
+      
+      
+

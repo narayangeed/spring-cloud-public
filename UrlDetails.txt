@@ -1,0 +1,16 @@
+
+Spring microservices port : 9091 to 9095
+Spring swagger API port : 5050
+Spring resource server port : 8888
+Spring eureka server port : 8761
+Spring boot monitoring dashboard port : 6060
+
+
+
+URLS:
+Spring boot monitoring dashboard	: http://localhost:6060/applications/
+Spring eureka server port		: http://localhost:8761/
+Spring microservices port		: http://localhost:9094/
+					  http://localhost:9091/
+					  http://localhost:9094/rest (to check forwarded call using rest client)
+					  http://localhost:9095/rest (using feign client)
